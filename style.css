@@ -1,0 +1,23 @@
+body {
+  background-color: blanchedalmond;
+  color: navy;
+  padding: 2% 10%;
+
+}
+
+header h1 {
+  margin-bottom: 0px;
+  padding: 5px;
+  border-bottom: 10px solid navy;
+}
+
+button {
+  background-color: lightskyblue;
+  border-radius: 5px;
+  border: 2px solid navy;
+  cursor: pointer;
+}
+
+li {
+  margin: 5px;
+}

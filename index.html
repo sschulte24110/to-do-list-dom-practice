@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>To Do List Dom Practice</title>
+</head>
+
+<body>
+  <header>
+    <h1>Scott's To Do List</h1>
+  </header>
+  <main>
+
+    <section class="new-task">
+      <h2>Add New Task</h2>
+      <form onsubmit="addTask(event)">
+        <input id="task-name" type="text" placeholder="Task Name">
+        <select id="task-priority">
+          <option value="" disabled selected hidden>Select Priority...</option>
+          <option value="low">Low Priority</option>
+          <option value="medium">Medium Priority</option>
+          <option value="high">High Priority</option>
+        </select>
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+    <section class="task-list">
+      <h2>Task List:</h2>
+      <p>There are <span id="task-count"></span> tasks</p>
+      <button onclick="clearTasks(event)">Clear</button>
+      <ul id="task-list">
+        <li>No Tasks</li>
+      </ul>
+    </section>
+  
+  </main>
+
+</body>
+
+</html>
