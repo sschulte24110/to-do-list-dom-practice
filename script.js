@@ -1,5 +1,3 @@
-console.log('Hello');
-
 /*
   Steps:
    1. Make the index.html (done)
@@ -11,6 +9,11 @@ console.log('Hello');
 */
 
 let taskCount = 0;
+
+function onReady() {
+  console.log('Hello');
+  clearTasks();
+}
 
 function addTask(event) {
   event.preventDefault();
@@ -49,10 +52,6 @@ function clearTasks() {
 
 function renderTaskCount() {
   document.getElementById('task-count').innerText = taskCount;
-}
-
-function onReady() {
-  clearTasks();
 }
 
 onReady();
