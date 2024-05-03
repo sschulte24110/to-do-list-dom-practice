@@ -17,8 +17,8 @@ function addTask(event) {
 
   let taskName = document.getElementById('task-name').value;
   let taskPriority = document.getElementById('task-priority').value;
-  
-  appendTask(taskName, taskPriority);  
+
+  appendTask(taskName, taskPriority);
 
   document.getElementById('task-name').value = '';
 }
@@ -27,7 +27,7 @@ function appendTask(taskName, taskPriority) {
   document.getElementById('task-list').innerHTML += `
   <li>${taskName} (priority: ${taskPriority}) <button onclick="deleteTask(event)">Delete</button></li>
   `;
-  
+
   taskCount++;
   renderTaskCount();
 }
